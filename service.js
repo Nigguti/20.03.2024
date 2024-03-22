@@ -64,7 +64,7 @@ categoriaAll(id); {
     return categorias;
 }
 
-atualizarCategoria(id, novosDadosCategoria) {
+atualizarCategoria(id, novosDadosCategoria); {
     const index = this.categorias.findIndex(categoria => categoria.id === id);
     if (index !== -1) {
         this.categorias[index] = { ...this.categorias[index], ...novosDadosCategoria };
